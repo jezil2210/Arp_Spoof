@@ -9,7 +9,7 @@ Program in python to perform an attack technique in which an attacker sends ARP 
 
 ## Scapy
 
-The module is used to send and receive the ARP messages, in this case send responses to client, and the default gateway, this way the client will think that my host is the gateway and the gateway that i'm the client, and all the packet traffic will pass through my host.
+The module is used to send and receive the ARP messages(can be used to Create Packets, Analyse Packets and send/receive Packets) in this case we are gonna use to send responses to client, and the default gateway, this way the client will think that my host is the gateway and the gateway that i'm the client, and all the packet traffic will pass through my host.
 
 ```python
 def spoof(target_ip, spoof_ip): 
@@ -40,4 +40,6 @@ I have to send packets pretending being another host constantly, so i used one i
 but I still put a 2 second of interval between sending packages to have at least control.<br>
 
 With the exception when CTRL + C is typed the progam stops running, and use the restore functions to restore the ARP tables of the target host and the gateway.
+
+<img src="termi.png">
 
