@@ -43,3 +43,5 @@ With the exception when CTRL + C is typed the progam stops running, and use the 
 
 <img src="termi.png">
 
+So until we type CTRL + C the progam is sending packets two by two (one for the target and one for the gateway).
+
